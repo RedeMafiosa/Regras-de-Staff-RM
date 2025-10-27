@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regras da Staff</title>
+<style>
+body {
+  background-color: #111;
+  color: #ddd;
+  font-family: 'Courier New', monospace;
+  line-height: 1.5;
+  padding: 30px;
+  user-select: none; /* impede seleção de texto */
+}
+
+h1 {
+  color: #ff4444;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #ff4444;
+  font-weight: bold;
+  margin-top: 40px;
+  border-bottom: 2px solid #ff4444;
+  padding-bottom: 5px;
+}
+
+strong {
+  color: #ff6666;
+}
+
+.block {
+  background-color: #1a1a1a;
+  border-left: 4px solid #ff3333;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+  white-space: pre-wrap;
+  color: #ccc;
+}
+
+ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+li::before {
+  content: "• ";
+  color: #ff6666;
+}
+
+.observacao {
+  color: #00ff00;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+::selection {
+  background: transparent; /* não destaca nada */
+}
+</style>
+<script>
+// Bloquear clique direito
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Bloquear teclas Ctrl+C, Ctrl+X, Ctrl+U e F12
+document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && (e.key === 'c' || e.key === 'x' || e.key === 'u')) {
+        e.preventDefault();
+    }
+    if (e.key === 'F12') {
+        e.preventDefault();
+    }
+});
+</script>
+</head>
+<body>
+
+<h1>Regras de Staff - Administração</h1>
+
+<!-- Aqui você pode adicionar cada regra em bloco -->
+<!-- Exemplo da primeira regra -->
+<h2>01. Abuso de Comandos Administrativos</h2>
+<div class="block">
+Descrição: Uso de comandos de admin para benefício próprio ou prejudicar outros sem motivo.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento → Banimento da equipe
+</div>
+
+<h2>02. Imparcialidade / Proteção a Amigos</h2>
+<div class="block">
+Descrição: Favorecimento de amigos em denúncias, atendimento ou punições.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento imediato → Banimento da equipe
+</div>
+
+<h2>03. Falta de Profissionalismo</h2>
+<div class="block">
+Descrição: Linguagem inadequada, tretas, provocações ou atitudes infantis no /relatorio, /rel, chat admin ou global.<br>
+<strong>Punição:</strong> Advertência → Suspensão (1-3 dias) → Rebaixamento
+</div>
+
+<!-- Continue adicionando todas as regras seguindo o mesmo padrão -->
+<!-- Para não deixar o HTML gigante aqui, você pode continuar duplicando <h2> e <div class="block"> -->
+<!-- Regra 04 -->
+<h2>04. Ausência Sem Justificativa</h2>
+<div class="block">
+Descrição: Inatividade prolongada sem avisar no discord.<br>
+<strong>Punição:</strong> Advertência → Remoção temporária → Banimento da equipe (caso reincida)
+</div>
+
+<!-- Regra 05 -->
+<h2>05. Negligência no Atendimento</h2>
+<div class="block">
+Descrição: Ignorar /relatorio, atendimento demorado ou mal feito.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Rebaixamento
+</div>
+<!-- Regras 6 a 72 -->
+
+<h2>06. Informações Confidenciais Vazadas</h2>
+<div class="block">
+Descrição: Vazar informações internas (atualizações, decisões da staff, denúncias em andamento, etc.).<br>
+<strong>Punição:</strong> Banimento da equipe imediatamente
+</div>
+
+<h2>07. Uso Indevido de Conta Staff</h2>
+<div class="block">
+Descrição: Usar conta administrativa para jogar como player, fazer atividades ilegais, farmar dinheiro, etc.<br>
+<strong>Punição:</strong> Rebaixamento → Banimento da equipe
+</div>
+
+<h2>08. Corrupção / Venda de Benefícios</h2>
+<div class="block">
+Descrição: Cobrar por cargos, veículos, dinheiro, ou vantagens no servidor.<br>
+<strong>Punição:</strong> Banimento imediato do servidor e da equipe
+</div>
+
+<h2>09. Falta de Comunicação com a Equipe</h2>
+<div class="block">
+Descrição: Não participar de reuniões, não responder no grupo da staff, não se informar das atualizações.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Rebaixamento
+</div>
+
+<h2>10. Maus Tratos a Players</h2>
+<div class="block">
+Descrição: Tratar mal players, ser grosseiro, sarcástico ou humilhante.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento → Remoção
+</div>
+
+<h2>11. Desrespeito a Superiores</h2>
+<div class="block">
+Descrição: Questionar ordens sem fundamentos, desobedecer líder/admin superior.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento
+</div>
+
+<h2>12. Acúmulo de Advertências</h2>
+<div class="block">
+Descrição: Três advertências acumuladas em curto período.<br>
+<strong>Punição:</strong> Rebaixamento ou remoção imediata da equipe
+</div>
+
+<h2>13. Conflitos Internos / Panelinhas</h2>
+<div class="block">
+Descrição: Criar divisões ou conflitos dentro da equipe, formar grupinhos tóxicos.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Rebaixamento ou remoção
+</div>
+
+<h2>14. Fingir Atendimento</h2>
+<div class="block">
+Descrição: Marcar como "resolvido" sem realmente atender o player.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento
+</div>
+
+<h2>15. Desrespeito ao Manual/Admin Guide</h2>
+<div class="block">
+Descrição: Ignorar regras e procedimentos internos definidos pela liderança.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Remoção
+</div>
+
+<h2>16. Divulgação Indevida</h2>
+<div class="block">
+Descrição: Divulgar outros servidores, links externos ou conteúdos não relacionados sem autorização.<br>
+<strong>Punição:</strong> Rebaixamento → Banimento da equipe
+</div>
+
+<h2>17. Trocar Favores com Players</h2>
+<div class="block">
+Descrição: Dar benefícios em troca de algo (elogios, apoio, vantagens).<br>
+<strong>Punição:</strong> Advertência → Rebaixamento → Remoção da equipe
+</div>
+
+<h2>18. Flood ou Spam no Chat Admin</h2>
+<div class="block">
+Descrição: Enviar várias mensagens desnecessárias, usar o chat como conversa paralela.<br>
+<strong>Punição:</strong> Advertência → Mutado internamente → Suspensão
+</div>
+
+<h2>19. Utilizar Comandos em Área Proibida</h2>
+<div class="block">
+Descrição: Usar comandos administrativos em eventos, guerras ou locais onde podem interferir no jogo.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Rebaixamento
+</div>
+
+<h2>20. Criar Eventos sem Permissão</h2>
+<div class="block">
+Descrição: Realizar eventos usando comandos admin sem autorização da liderança.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento
+</div>
+
+<h2>21. Assumir Denúncias Envolvendo Amigos</h2>
+<div class="block">
+Descrição: Pegar denúncias ou atendimentos de players com quem tem amizade próxima.<br>
+<strong>Punição:</strong> Advertência → Remoção do atendimento → Rebaixamento
+</div>
+
+<h2>22. Editar Logs ou Ocultar Provas</h2>
+<div class="block">
+Descrição: Alterar registros, prints ou esconder informações em denúncias ou revisões.<br>
+<strong>Punição:</strong> Banimento imediato da equipe
+</div>
+
+<h2>23. Participar de Facções/Empregos com Conta Staff</h2>
+<div class="block">
+Descrição: Envolver-se em atividades comuns de player com conta administrativa.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento → Banimento da equipe
+</div>
+
+<h2>24. Não Reportar Bugs Encontrados</h2>
+<div class="block">
+Descrição: Encontrar bugs e não reportar para a liderança/admin responsável.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento
+</div>
+
+<h2>25. Desrespeito à Hierarquia</h2>
+<div class="block">
+Descrição: Ignorar decisões da liderança ou agir como se tivesse cargo superior.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento
+</div>
+
+<h2>26. Comportamento Inadequado no Discord</h2>
+<div class="block">
+Descrição: Discussões, brigas ou ironias com membros no Discord, inclusive canais internos da staff.<br>
+<strong>Punição:</strong> Advertência → Mutado → Suspensão
+</div>
+
+<h2>27. Falta de Sigilo nas Denúncias</h2>
+<div class="block">
+Descrição: Comentar, vazar ou expor denúncias em andamento publicamente.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Rebaixamento
+</div>
+
+<h2>28. Usar Comandos sem Justificativa</h2>
+<div class="block">
+Descrição: Utilizar /trazer, /ir, /slap, /kick sem explicar ou de forma injusta.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento
+</div>
+
+<h2>29. Convidar Players para Servidores Paralelos</h2>
+<div class="block">
+Descrição: Aproveitar o cargo para puxar jogadores para projetos próprios.<br>
+<strong>Punição:</strong> Banimento do servidor e da equipe
+</div>
+
+<h2>30. Ser Staff em Outro Servidor Sem Aviso</h2>
+<div class="block">
+Descrição: Atuar como admin/helper/moderador em outro servidor SAMP sem notificar a administração.<br>
+<strong>Punição:</strong> Advertência → Avaliação → Remoção em caso de conflito de interesses
+</div>
+<h2>31. Usar Skin Indevida na Conta Admin</h2>
+<div class="block">
+Descrição: Utilizar skins restritas (ex: líderes, especiais, bugs) sem autorização.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Rebaixamento
+</div>
+
+<h2>32. Tratar Denúncias com Descaso</h2>
+<div class="block">
+Descrição: Ignorar provas, responder de forma irônica ou não dar atenção necessária.<br>
+<strong>Punição:</strong> Advertência → Reorientação → Rebaixamento
+</div>
+
+<h2>33. Usar Admin Para Observar</h2>
+<div class="block">
+Descrição: Ficar em modo espectador ou usando comandos para espionar.<br>
+<strong>Punição:</strong> Rebaixamento → Banimento da equipe
+</div>
+
+<h2>34. Fingir Ser Player Com Conta Alternativa</h2>
+<div class="block">
+Descrição: Criar conta secundária para jogar ou espionar players/facções.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento → Banimento da equipe
+</div>
+
+<h2>35. Ignorar Chamados Com Intenção</h2>
+<div class="block">
+Descrição: Estar online e se recusar a atender players de forma proposital.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Rebaixamento
+</div>
+
+<h2>36. Ameaçar Players com Ban ou Punição</h2>
+<div class="block">
+Descrição: Usar o cargo para intimidar ou ameaçar jogadores.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento → Remoção da equipe
+</div>
+
+<h2>37. Mentir em Relatórios Internos</h2>
+<div class="block">
+Descrição: Apresentar informações falsas em logs, reuniões ou documentos administrativos.<br>
+<strong>Punição:</strong> Rebaixamento imediato → Banimento da equipe
+</div>
+
+<h2>38. Forjar Provas em Denúncias</h2>
+<div class="block">
+Descrição: Criar prints editadas, vídeos cortados ou qualquer forma de manipulação.<br>
+<strong>Punição:</strong> Banimento imediato da equipe e do servidor
+</div>
+
+<h2>39. Ser Flagado Com Cheats ou Programas Irregulares</h2>
+<div class="block">
+Descrição: Mesmo que não usados com conta staff, a presença de programas ilegais é proibida.<br>
+<strong>Punição:</strong> Banimento do servidor e desligamento da staff
+</div>
+
+<h2>40. Fazer Piadas com Situações Graves</h2>
+<div class="block">
+Descrição: Brincar com bugs, falhas no servidor, denúncias sérias ou situações sensíveis.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Rebaixamento
+</div>
+
+<h2>41. Atuar em Denúncia Sem Ser Responsável</h2>
+<div class="block">
+Descrição: Interferir ou comentar em denúncias que não estão sob sua responsabilidade.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Rebaixamento
+</div>
+
+<h2>42. Usar Comandos Administrativos para Brincadeiras</h2>
+<div class="block">
+Descrição: Aplicar slap, prender, congelar ou puxar players apenas por diversão.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento → Remoção da equipe
+</div>
+
+<h2>43. Ser Flagado em Anti-RPG com Conta Secundária</h2>
+<div class="block">
+Descrição: Jogar de forma anti-RPG em outra conta, mesmo que não staff.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento → Banimento da equipe
+</div>
+
+<h2>44. Agir como "Dono do Servidor"</h2>
+<div class="block">
+Descrição: Se comportar de forma autoritária, ignorando a hierarquia ou regras.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento
+</div>
+
+<h2>45. Criar Conflito Entre Staffs</h2>
+<div class="block">
+Descrição: Colocar membros da equipe uns contra os outros, gerar intrigas ou fofocas.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Remoção da equipe
+</div>
+
+<h2>46. Abandonar Atendimentos no Meio</h2>
+<div class="block">
+Descrição: Sair no meio do atendimento sem terminar ou avisar outro admin.<br>
+<strong>Punição:</strong> Advertência → Suspensão
+</div>
+
+<h2>47. Utilizar TAG de Admin em Outro Servidor</h2>
+<div class="block">
+Descrição: Usar o nome do servidor ou sua posição para se promover fora dele.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento → Remoção
+</div>
+
+<h2>48. Brincar com o /ban ,/kick ou /cadeia</h2>
+<div class="block">
+Descrição: Simular punições no chat apenas para zoeira.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Rebaixamento
+</div>
+
+<h2>49. Ser Instruído e Repetir o Erro</h2>
+<div class="block">
+Descrição: Receber orientação sobre uma regra e reincidir no mesmo erro.<br>
+<strong>Punição:</strong> Rebaixamento direto → Avaliação para remoção da equipe
+</div>
+
+<h2>50. Aproveitar Cargo para Ganhar Respeito na Comunidade</h2>
+<div class="block">
+Descrição: Forçar players a obedecer fora do servidor com base no seu cargo.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento
+</div>
+
+<h2>51. Deslogar Para Evitar Responsabilidade</h2>
+<div class="block">
+Descrição: Sair do jogo ou Discord para fugir de denúncia, reunião ou atendimento.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Rebaixamento
+</div>
+
+<h2>52. Alterar Informações no Painel/Admin Log Sem Aviso</h2>
+<div class="block">
+Descrição: Modificar nome, rank ou status sem permissão do Superior.<br>
+<strong>Punição:</strong> Advertência → Reversão imediata → Rebaixamento
+</div>
+
+<h2>53. Ajudar Player a Burlar Regras</h2>
+<div class="block">
+Descrição: Ensinar ou incentivar qualquer tipo de brecha ou bug.<br>
+<strong>Punição:</strong> Rebaixamento → Banimento da equipe
+</div>
+
+<h2>54. Negar Ajuda a Novato por Preguiça</h2>
+<div class="block">
+Descrição: Ignorar ou maltratar jogadores novos no atendimento por não querer explicar.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Remoção da staff
+</div>
+
+<h2>55. Aplicar Punições Sem Provas</h2>
+<div class="block">
+Descrição: Banir, kickar ou prender sem nenhuma prova válida.<br>
+<strong>Punição:</strong> Advertência → Reversão da punição → Rebaixamento
+</div>
+
+<h2>56. Ser Staff e Ter Histórico Sujo em Outros Servidores</h2>
+<div class="block">
+Descrição: Descobrir que o membro foi banido por cheats ou má conduta em outro servidor.<br>
+<strong>Punição:</strong> Avaliação interna → Possível remoção da equipe
+</div>
+
+<h2>57. Utilizar Admin Para Impedir Morte ou Prisão</h2>
+<div class="block">
+Descrição: Ativar invencibilidade, teleportar ou sair de situações de risco indevidamente.<br>
+<strong>Punição:</strong> Rebaixamento → Banimento da equipe
+</div>
+
+<h2>58. Ser Desonesto em Revisões de Ban</h2>
+<div class="block">
+Descrição: Defender players banidos com base em informações falsas ou manipuladas.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Rebaixamento
+</div>
+
+<h2>59. Incentivar Staffs a Quebrar Regras</h2>
+<div class="block">
+Descrição: Motivar ou sugerir para que outros membros façam algo contra o regulamento.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento → Remoção
+</div>
+
+<h2>60. Abusar de Comandos em Atendimentos</h2>
+<div class="block">
+Descrição: Utilizar slap, congelar ou teleportar durante um atendimento sem necessidade real.<br>
+<strong>Punição:</strong> Advertência → Suspensão → Rebaixamento
+</div>
+
+<h2>61. Ignorar Ordens Diretas de um Superior</h2>
+<div class="block">
+Descrição: Recusar-se a cumprir instruções passadas por um Superior durante situação administrativa.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento
+</div>
+
+<h2>62. Se Beneficiar de Eventos ou Premiações</h2>
+<div class="block">
+Descrição: Participar de eventos premiados ou sorteios como admin ativo.<br>
+<strong>Punição:</strong> Advertência → Reembolso dos prêmios → Suspensão
+</div>
+
+<h2>63. Utilizar Comandos Admin em Facção Alternativa</h2>
+<div class="block">
+Descrição: Usar comandos administrativos enquanto joga disfarçado em facção.<br>
+<strong>Punição:</strong> Rebaixamento → Banimento da equipe
+</div>
+
+<h2>64. Responder Denúncia com Opinião Pessoal</h2>
+<div class="block">
+Descrição: Julgar denúncia com base em amizade ou achismo, sem provas claras.<br>
+<strong>Punição:</strong> Advertência → Reanálise da denúncia → Rebaixamento
+</div>
+
+<h2>65. Postar Conteúdo Impróprio nos Canais Internos</h2>
+<div class="block">
+Descrição: Compartilhar memes ofensivos, conteúdos +18 ou mensagens inapropriadas na área da staff.<br>
+<strong>Punição:</strong> Advertência → Mutado → Suspensão
+</div>
+
+<h2>66. Modificar Regras Sem Autorização</h2>
+<div class="block">
+Descrição: Alterar ou divulgar nova regra sem aprovação do Superior.<br>
+<strong>Punição:</strong> Advertência → Reversão da mudança → Rebaixamento
+</div>
+
+<h2>67. Expor Conversas Privadas da Staff</h2>
+<div class="block">
+Descrição: Vazar prints, áudios ou falas internas sem consentimento.<br>
+<strong>Punição:</strong> Rebaixamento → Remoção da equipe
+</div>
+
+<h2>68. Forçar Players a Retirar Denúncias</h2>
+<div class="block">
+Descrição: Pedir ou pressionar players a excluir denúncias contra membros da equipe.<br>
+<strong>Punição:</strong> Advertência → Rebaixamento → Remoção
+</div>
+
+<h2>69. Fingir Ser Iniciante Para Espionar Jogadores</h2>
+<div class="block">
+Descrição: Criar nova conta e se passar por novato para observar facções ou jogadores.<br>
+<strong>Punição:</strong> Rebaixamento → Banimento da equipe
+</div>
+
+<h2>70. Tratar Jogadores com Deboche ou Ironia</h2>
+<div class="block">
+Descrição: Responder com sarcasmo, deboche ou falta de profissionalismo durante atendimentos.<br>
+<strong>Punição:</strong> Advertência → Suspensão
+</div>
+
+<h2>71. Revisão de banimento</h2>
+<div class="block">
+Descrição: Somente Administradores com o cargo master + ou superior podem analisar revisões de banimento.<br>
+<strong>Punição:</strong> Advertência → Suspensão
+</div>
+
+<h2>72. Call Administrativa</h2>
+<div class="block">
+Descrição: Todos os administradores antes de logarem no servidor devem entrar call de trabalho.<br>
+<strong>Punição:</strong> Advertência verbal → Suspensão
+</div>
+
+<!-- Continuação para regras 31 a 72 -->
+
+<!-- Continue até a regra 72 -->
+
+</body>
+</html>
